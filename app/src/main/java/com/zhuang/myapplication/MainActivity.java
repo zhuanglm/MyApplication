@@ -140,4 +140,39 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             }
         }).start();
     }
+
+//    @Override
+//    public void onClick(View v) {
+//        switch (v.getId()) {
+//            case R.id.bt_sendMessage:
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() { //　新建一个线程，并新建一个Message的对象，是用Handler的对象发送这个Message
+//                        Message msg = new Message();
+//                        msg.what = UPDATE_TEXT; // 用户自定义的一个值，用于标识不同类型的消息
+//                        hd.sendMessage(msg); // 发送消息
+//                    }
+//                }).start();
+//                break;
+//
+//            default:
+//                break;
+//        }
+//    }
+//
+//    // 定义一个内部类继承自Handler，并且覆盖handleMessage方法用于处理子线程传过来的消息
+//    class MyHandler extends Handler{
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            switch (msg.what) {
+//                case UPDATE_TEXT: // 接受到消息之后，对UI控件进行修改
+//                    tv.setText("修改成功！");
+//                    break;
+//
+//                default:
+//                    break;
+//            }
+//        }
+//    }
 }
