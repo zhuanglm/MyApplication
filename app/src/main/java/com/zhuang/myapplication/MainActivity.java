@@ -60,11 +60,12 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             @Override
             public void onClick(View view) {
 
-//                Intent intent = new Intent();
-//                intent.putExtra("arg1","hahaha");
-
                 Bundle bundle = new Bundle();
                 bundle.putString("arg1","hahahaha");
+
+//                bundle.putSerializable("list",myData);
+//                Intent intent = new Intent();
+//                intent.putExtras(bundle);
 
                 MyDialogFragment myDialogFragment = new MyDialogFragment();
                 myDialogFragment.setArguments(bundle);
