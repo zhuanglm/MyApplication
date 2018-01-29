@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_space_creator">
+
+        <EditTextPreference
+            android:dialogTitle="@string/pref_space_name"
+            android:key="pref_edit_text_name"
+            android:summary="@string/pref_sum_space_name"
+            android:title="@string/pref_space_name" />
+        <CheckBoxPreference
+            android:key="pref_checkbox_managed"
+            android:defaultValue="true"
+            android:summary="@string/pref_sum_space_managed"
+            android:title="@string/pref_space_managed" />
+        <CheckBoxPreference
+            android:key="pref_checkbox_encrypted"
+            android:defaultValue="true"
+            android:summary="@string/pref_sum_space_encrypted"
+            android:title="@string/pref_space_encrypted" />
+        <CheckBoxPreference
+            android:key="pref_checkbox_APP_Control"
+            android:defaultValue="true"
+            android:summary="@string/pref_sum_space_controlled"
+            android:title="@string/pref_space_controlled" />
+        <Preference
+            android:icon="@drawable/ic_click"
+            android:key="pref_create_space"
+
+            android:title="@string/pref_Create" />
+        <Preference
+            android:icon="@drawable/ic_qr"
+            android:key="pref_QR_space"
+
+            android:title="@string/pref_QR_Create" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
